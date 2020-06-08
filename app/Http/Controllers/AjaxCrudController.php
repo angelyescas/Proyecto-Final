@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\suscriptor;
 use Illuminate\Http\Request;
-use App\Mensaje;
 
-class SuscriptorController extends Controller
+class AjaxCrudController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +13,7 @@ class SuscriptorController extends Controller
      */
     public function index()
     {
-        $count = Mensaje::where('recibe_id','=', auth()->id())->count();
-        return view('rol.suscriptor',compact('count'));
+        //
     }
 
     /**
@@ -43,10 +40,10 @@ class SuscriptorController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\suscriptor  $suscriptor
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(suscriptor $suscriptor)
+    public function show($id)
     {
         //
     }
@@ -54,10 +51,10 @@ class SuscriptorController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\suscriptor  $suscriptor
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(suscriptor $suscriptor)
+    public function edit($id)
     {
         //
     }
@@ -66,10 +63,10 @@ class SuscriptorController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\suscriptor  $suscriptor
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, suscriptor $suscriptor)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -77,10 +74,10 @@ class SuscriptorController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\suscriptor  $suscriptor
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(suscriptor $suscriptor)
+    public function destroy($id)
     {
         //
     }

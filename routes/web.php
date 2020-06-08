@@ -23,11 +23,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/suscriptor', 'SuscriptorController@index')->middleware('auth');;
 
 Route::resource('cobrador', 'CobradorController')->middleware('auth');;
-Route::resource('suscriptor', 'SuscriptorController')->middleware('auth');;
+Route::resource('suscripcion', 'SuscripcionController')->middleware('auth');;
 Route::resource('servicio', 'ServicioController')->middleware('auth');;
 Route::resource('users', 'UserController')->middleware('auth');;
 Route::resource('mensaje', 'MensajeController')->middleware('auth');;
 Route::resource('notifi', 'NotificacionController')->middleware('auth');;
+Route::resource('suscriptor', 'SuscriptorController')->middleware('auth');;
+
 
 
 
