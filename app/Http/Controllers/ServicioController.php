@@ -93,6 +93,8 @@ class ServicioController extends Controller
      */
     public function edit($id)
     {
+
+        
         $data = Servicio::findOrFail($id);
         return view('servicio.edit', compact('data'));
     }

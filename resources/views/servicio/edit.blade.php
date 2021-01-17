@@ -62,8 +62,8 @@
        <label class="col-md-4 text-right">Select Profile Image</label>
        <div class="col-md-8">
         <input type="file" name="Foto3" />
-              <img src="{{ URL::to('/') }}/images3/{{ $data->Foto3 }}" class="img-thumbnail" width="100" />
-                        <input type="hidden" name="hidden_image3" value="{{ $data->Foto3 }}" />
+        <img src="{{ URL::to('/') }}/images3/{{ $data->Foto3 }}" class="img-thumbnail" width="100" />
+        <input type="hidden" name="hidden_image3" value="{{ $data->Foto3 }}" />
        </div>
       </div>
       <div class="form-group text-center">

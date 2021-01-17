@@ -81,7 +81,7 @@
  @foreach($datas as $row)
   <div class="col mb-4">
     <div class="card">
-    <img src="{{ URL::to('/') }}/Images2/{{ $row->Foto2 }}" class="card-img-top" width="75">
+    <img src="{{ URL::to('/') }}/Images2/{{ $row->Foto2 }}" class="card-img-top" width="50">
       <div class="card-body">
         <h5 class="card-title">{{ $row->Nombre }}</h5>
         <p class="card-text"><td>{{ $row->Costo }}</p>

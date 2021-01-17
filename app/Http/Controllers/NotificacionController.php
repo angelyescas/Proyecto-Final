@@ -13,10 +13,10 @@ class NotificacionController extends Controller
         
         
         //$mensaje = DB::table('mensajes')->get();
-        $count = Mensaje::where('recibe_id','=', auth()->id())->count();
+        
         
         $mensaje =Mensaje::where('recibe_id','=', auth()->id())->get();
-        return view('notifi.index', compact('mensaje','count'));
+        return view('notifi.index', compact('mensaje'));
         
 
     }
